@@ -1,0 +1,33 @@
+body {
+    background-color: grey;
+}
+
+.pin_container {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, $card-width);
+    grid-auto-rows: $row_increment;
+    justify-content: center;
+    background-color: black;
+    &__card {
+        margin: 15px 10px;
+        border-radius: $card-border_radius;
+        background-color: red;
+    }
+}
+
+// los auto row son de 10px asi que se multiplica con el span y la variable 
+
+.card--small {
+    grid-row-end: span $card_small;
+
+}
+
+.card--medium {
+    grid-row-end: span $card_medium;
+}
+
+.card--large {
+    grid-row-end: span $card_large;
+}
