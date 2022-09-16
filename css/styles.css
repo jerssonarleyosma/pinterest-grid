@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-columns: repeat(auto-fill, 7px);
   grid-auto-rows: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -34,14 +34,20 @@ body {
 .card--small {
   -ms-grid-row-span: 26;
   grid-row-end: span 26;
+  -ms-grid-column-span: 26;
+  grid-column-end: span 26;
 }
 
 .card--medium {
   -ms-grid-row-span: 33;
   grid-row-end: span 33;
+  -ms-grid-column-span: 33;
+  grid-column-end: span 33;
 }
 
 .card--large {
   -ms-grid-row-span: 45;
   grid-row-end: span 45;
+  -ms-grid-column-span: 45;
+  grid-column-end: span 45;
 }
